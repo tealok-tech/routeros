@@ -1,4 +1,4 @@
-module github.com/go-routeros/routeros/v3
+module github.com/tealok-tech/routeros/v3
 
 go 1.21
 
