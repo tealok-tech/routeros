@@ -8,7 +8,7 @@ import (
 
 	"github.com/stretchr/testify/require"
 
-	"github.com/go-routeros/routeros/v3/proto"
+	"github.com/tealok-tech/routeros/v3/proto"
 )
 
 func TestRandomData(t *testing.T) {

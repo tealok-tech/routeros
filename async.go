@@ -3,7 +3,7 @@ package routeros
 import (
 	"context"
 
-	"github.com/go-routeros/routeros/v3/proto"
+	"github.com/tealok-tech/routeros/v3/proto"
 )
 
 type sentenceProcessor interface {

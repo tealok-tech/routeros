@@ -18,7 +18,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/go-routeros/routeros/v3/proto"
+	"github.com/tealok-tech/routeros/v3/proto"
 )
 
 // Client is a RouterOS API client.
