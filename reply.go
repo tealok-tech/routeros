@@ -26,6 +26,7 @@ func (r *Reply) String() string {
 	return sb.String()
 }
 
+// Return whether or not we are done processing, and any error detected in the sentence
 func (r *Reply) processSentence(sen *proto.Sentence) (bool, error) {
 	switch sen.Word {
 	case reSentence:
@@ -34,7 +35,7 @@ func (r *Reply) processSentence(sen *proto.Sentence) (bool, error) {
 		r.Done = sen
 		return true, nil
 	case trapSentence, fatalSentence:
-		return sen.Word == fatalSentence, &DeviceError{sen}
+		return sen.Word == fatalSentence, DeviceErrorFromSentence(sen)
 	case "":
 		// API docs say that empty sentences should be ignored
 	default:
